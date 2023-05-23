@@ -1,0 +1,18 @@
+<span class="tableTitle">Notes</span>
+<table class="table">
+  <tr>
+      {{#each notesKey}}
+      <th>{{this}}</th>
+      {{/each}}
+  </tr>
+  {{#each notesList}}
+  <tr>
+      <td>{{this.hash}}</td>
+      <td>{{this.error}}</td>
+      <td>{{this.fixed}}</td>
+      <td>{{this.description}}</td>
+      <td>{{this.notes}}</td>
+      <td>{{this.Attachments}}</td>
+  </tr>
+  {{/each}}
+</table>

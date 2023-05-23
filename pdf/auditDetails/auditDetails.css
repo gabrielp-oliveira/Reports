@@ -1,0 +1,23 @@
+.table  {
+    margin-bottom: 10px;
+}
+.table th {
+    width: 100px;
+    padding: 0;
+    margin: 0;
+    align-self: center;
+    align-items: center;
+
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+.tableTitle {
+    background: gray;
+    border: 1px solid black;
+    width: 150px;
+    padding: 2px 5px;
+
+
+}

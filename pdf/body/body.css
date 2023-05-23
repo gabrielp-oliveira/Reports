@@ -1,0 +1,11 @@
+#tabaco {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+}
+#tabaco > body {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}

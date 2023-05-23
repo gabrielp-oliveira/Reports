@@ -1,0 +1,192 @@
+{
+  "header": {
+    "name": "Quality Assurance Tobacco Audit",
+    "date": "Tuesday Apr 18, 2023",
+    "summary": "2725"
+  },
+  "topInformations": {
+    "facility": "C&S WINDSOR LOCKS",
+    "CSRep": "Angel Soto",
+    "load": "2725",
+    "trailer": "",
+    "seal": ""
+  },
+  "auditHeader": ["Audit #","customer# Key#",
+  "invoice #","cases on invoice","cases counted","cases shipped",
+  "overs","shorts","mispicks","selector"],
+  "auditDetails": [{
+      "audit": "999261 - 1", 
+      "customerKey": "39854 - 854",
+      "invoice": "411948,497 4413",
+      "casesOnInvoice": "11",
+      "casesCounted": "11",
+      "casesShipped": "11",
+      "overs": "0",
+      "shorts": "0",
+      "mispicks": "1",
+      "selector": "Keith Lagasse"
+    },
+    {
+      "audit": "999261 - 2",
+      "customerKey": "39726 - 726",
+      "invoice": "411942,497 4407",
+      "casesOnInvoice": "25",
+      "casesCounted": "25",
+      "casesShipped": "25",
+      "overs": "0",
+      "shorts": "0",
+      "mispicks": "1",
+      "selector": "Gabriel Ol."
+    },
+    {
+      "audit": "999261 - 2",
+      "customerKey": "39726 - 726",
+      "invoice": "411942,497 4407",
+      "casesOnInvoice": "25",
+      "casesCounted": "25",
+      "casesShipped": "25",
+      "overs": "0",
+      "shorts": "0",
+      "mispicks": "1",
+      "selector": "Gabriel Ol."
+    },
+    {
+      "audit": "999261 - 2",
+      "customerKey": "39726 - 726",
+      "invoice": "411942,497 4407",
+      "casesOnInvoice": "25",
+      "casesCounted": "25",
+      "casesShipped": "25",
+      "overs": "0",
+      "shorts": "0",
+      "mispicks": "1",
+      "selector": "Gabriel Ol."
+    }
+  ],
+    "auditTotal":{
+      "total": "",
+      "customerKey": "",
+      "invoice": "",
+      "casesOnInvoice": "25",
+      "casesCounted": "25",
+      "casesShipped": "25",
+      "overs": "0",
+      "shorts": "0",
+      "mispicks": "1",
+      "selector": ""
+    },
+    "commentsHeader":["audit #","customer# Key#",
+    "Comments","selector"],
+  "comments": [
+    {
+      "audit": "999261 - 2",
+      "customerKey": "39726 - 726",
+      "Comments": "Mp,Picked from beside",
+      "selector": "Keith Lagasse"
+    }
+  ],
+  "CustRepSignaturesHeader":["title","assignature"],
+  "CustRepSignatures": [{
+    "title": "title",
+    "assignature": "http://"
+  }],
+  "itemDetailsHeader":["audit","E","type","item","productDescription","slot","req",
+  "act","net","value","total","note"],
+  "itemDetails": [
+    {
+      "audit": "999261-01",
+      "e": "1",
+      "type": "Mispick",
+      "item": "453204",
+      "productDescription": "MARL KGF BX 03570 ",
+      "slot": "102101",
+      "req": "0",
+      "act": "1",
+      "net": "1",
+      "value": "$63.54",
+      "total": "$63.54",
+      "note": "925300"
+    },
+    {
+      "audit": "999261-01",
+      "e": "1",
+      "type": "Mispick",
+      "item": "453204",
+      "productDescription": "MARL KGF BX 03570 ",
+      "slot": "102101",
+      "req": "0",
+      "act": "1",
+      "net": "1",
+      "value": "$63.54",
+      "total": "$63.54",
+      "note": "925300"
+    },
+    {
+      "audit": "999261-01",
+      "e": "1",
+      "type": "Mispick",
+      "item": "453204",
+      "productDescription": "MARL KGF BX 03570 ",
+      "slot": "102101",
+      "req": "0",
+      "act": "1",
+      "net": "1",
+      "value": "$63.54",
+      "total": "$63.54",
+      "note": "925300"
+    },
+    {
+      "audit": "999261-01",
+      "e": "1",
+      "type": "Mispick",
+      "item": "453204",
+      "productDescription": "MARL KGF BX 03570 ",
+      "slot": "102101",
+      "req": "0",
+      "act": "1",
+      "net": "1",
+      "value": "$63.54",
+      "total": "$63.54",
+      "note": "925300"
+    },
+    {
+      "audit": "999261-01",
+      "e": "1",
+      "type": "Mispick",
+      "item": "453204",
+      "productDescription": "MARL KGF BX 03570 ",
+      "slot": "102101",
+      "req": "0",
+      "act": "1",
+      "net": "1",
+      "value": "$63.54",
+      "total": "$63.54",
+      "note": "925300"
+    }
+  ],
+  "associateDetailsHeader":["associateName","Audited","overs","shorts"
+  ,"Mispick","damage","weight", "note"],
+  "associateDetails": [
+    {
+      "associateName": "Lagasse, Keith",
+      "Audited": "33",
+      "overs": "0",
+      "shorts": "0",
+      "Mispick": "0",
+      "damage": "0",
+      "weight": "0",
+      "note": "1"
+    }
+  ],
+  "notesHeader":["hash","error","fixed","description","notes","Attachments"],
+  "notes": [
+    {
+      "hash": "925300",
+      "error": "20C",
+      "fixed": "y",
+      "description": "MP: Beside the slot of the intended pick",
+      "notes": "Mp",
+      "Attachments": "450350"
+    }
+  ]
+}

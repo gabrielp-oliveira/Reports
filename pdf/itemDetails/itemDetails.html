@@ -1,0 +1,24 @@
+<span class="tableTitle">Items Details</span>
+<table class="table">
+  <tr>
+      {{#each itemDetailsKey}}
+      <th>{{this}}</th>
+      {{/each}}
+  </tr>
+  {{#each itemDetailsValue}}
+  <tr>
+      <td>{{this.audit}}</td>
+      <td>{{this.e}}</td>
+      <td>{{this.type}}</td>
+      <td>{{this.item}}</td>
+      <td>{{this.productDescription}}</td>
+      <td>{{this.slot}}</td>
+      <td>{{this.req}}</td>
+      <td>{{this.act}}</td>
+      <td>{{this.net}}</td>
+      <td>{{this.value}}</td>
+      <td>{{this.total}}</td>
+      <td>{{this.note}}</td>
+  </tr>
+  {{/each}}
+</table>

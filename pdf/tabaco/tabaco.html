@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" id="tabaco">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <div class="img">
+            <!-- <img src="" alt=""> -->
+            <span>Image</span>
+            <h3>Quality Assurance</h3>
+        </div>
+        <div class="name">
+            <h2>{{header.name}}</h2>
+            <h4>{{header.date}}</h4>
+        </div>
+        <div class="summary">
+            <h3>Summary</h3>
+            <h4>{{header.summary}}</h4>
+        </div>
+    </div>
+
+
+
+
+    
+    <div class="subHeader">
+            <Strong>Facility: {{subHeader.facility}}</Strong>
+            <Strong>C&S Rep: {{subHeader.CSRep}}</Strong>
+            <Strong>load #: {{subHeader.load}}</Strong>
+            <Strong>trailer #: {{subHeader.trailer}}</Strong>
+            <Strong>seal #: {{subHeader.seal}}</Strong>
+    </div>
+    
+    
+    <span class="tableTitle">Audit Details</span>
+    <table class="table">
+        <tr>
+            {{#each auditHeader}}
+            <th>{{this}}</th>
+            {{/each}}
+        </tr>
+        {{#each auditDetails}}
+        <tr>
+            <td>{{this.audit}}</td>
+            <td>{{this.customerKey}}</td>
+            <td>{{this.invoice}}</td>
+            <td>{{this.casesOnInvoice}}</td>
+            <td>{{this.casesCounted}}</td>
+            <td>{{this.casesShipped}}</td>
+            <td>{{this.overs}}</td>
+            <td>{{this.shorts}}</td>
+            <td>{{this.mispicks}}</td>
+            <td>{{this.selector}}</td>
+        </tr>
+        {{/each}}
+        <tr>
+            <td>total</td>
+            <td>{{auditTotal.customerKey}}</td>
+            <td>{{auditTotal.invoice}}</td>
+            <td>{{auditTotal.casesOnInvoice}}</td>
+            <td>{{auditTotal.casesCounted}}</td>
+            <td>{{auditTotal.casesShipped}}</td>
+            <td>{{auditTotal.overs}}</td>
+            <td>{{auditTotal.shorts}}</td>
+            <td>{{auditTotal.mispicks}}</td>
+            <td>{{auditTotal.selector}}</td>
+        </tr>
+        
+      </table>
+
+      <span class="tableTitle">comments</span>
+      <table class="table">
+        <tr>
+            {{#each commentsHeader}}
+            <th>{{this}}</th>
+            {{/each}}
+        </tr>
+
+        {{#each comments}}
+        <tr>
+            <td>{{this.audit}}</td>
+            <td>{{this.customerKey}}</td>
+            <td>{{this.Comments}}</td>
+            <td>{{this.selector}}</td>
+        </tr>
+        {{/each}}
+
+      </table>
+
+      <span class="tableTitle">associate Details</span>
+      <table class="table">
+        <tr>
+            {{#each associateDetailsHeader}}
+            <th>{{this}}</th>
+            {{/each}}
+        </tr>
+
+        {{#each associateDetails}}
+        <tr>
+            <td>{{this.associateName}}</td>
+            <td>{{this.Audited}}</td>
+            <td>{{this.overs}}</td>
+            <td>{{this.shorts}}</td>
+            <td>{{this.Mispick}}</td>
+            <td>{{this.damage}}</td>
+            <td>{{this.weight}}</td>
+            <td>{{this.note}}</td>
+        </tr>
+        {{/each}}
+
+      </table>
+    
+      <span class="tableTitle">Cust Rep Signatures</span>
+      <table class="table">
+        <tr>
+            {{#each CustRepSignaturesHeader}}
+            <th>{{this}}</th>
+            {{/each}}
+        </tr>
+        {{#each CustRepSignatures}}
+        <tr>
+            <td>{{this.title}}</td>
+            <td>{{this.assignature}}</td>
+        </tr>
+        {{/each}}
+      </table>
+
+      <span class="tableTitle">Items Details</span>
+      <table class="table">
+        <tr>
+            {{#each itemDetailsHeader}}
+            <th>{{this}}</th>
+            {{/each}}
+        </tr>
+        {{#each itemDetails}}
+        <tr>
+            <td>{{this.audit}}</td>
+            <td>{{this.e}}</td>
+            <td>{{this.type}}</td>
+            <td>{{this.item}}</td>
+            <td>{{this.productDescription}}</td>
+            <td>{{this.slot}}</td>
+            <td>{{this.req}}</td>
+            <td>{{this.act}}</td>
+            <td>{{this.net}}</td>
+            <td>{{this.value}}</td>
+            <td>{{this.total}}</td>
+            <td>{{this.note}}</td>
+        </tr>
+        {{/each}}
+      </table>
+      <span class="tableTitle">Notes</span>
+      <table class="table">
+        <tr>
+            {{#each notesHeader}}
+            <th>{{this}}</th>
+            {{/each}}
+        </tr>
+        {{#each notes}}
+        <tr>
+            <td>{{this.hash}}</td>
+            <td>{{this.error}}</td>
+            <td>{{this.fixed}}</td>
+            <td>{{this.description}}</td>
+            <td>{{this.notes}}</td>
+            <td>{{this.Attachments}}</td>
+        </tr>
+        {{/each}}
+      </table>
+
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<span class="tableTitle">Audit Details</span>
+<table class="table">
+    <tr>
+        {{#each auditDetailsKey}}
+        <th>{{this}} </th>
+        {{/each}}
+    </tr>
+    {{#each auditDetailsValue}}
+    <tr>
+        <td>{{this.audit}}</td>
+        <td>{{this.customerKey}}</td>
+        <td>{{this.invoice}}</td>
+        <td>{{this.casesOnInvoice}}</td>
+        <td>{{this.casesCounted}}</td>
+        <td>{{this.casesShipped}}</td>
+        <td>{{this.overs}}</td>
+        <td>{{this.shorts}}</td>
+        <td>{{this.mispicks}}</td>
+        <td>{{this.selector}}</td>
+    </tr>
+    {{/each}}
+
+    {{{total.component}}}
+    
+  </table>

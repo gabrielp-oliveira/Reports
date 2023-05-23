@@ -1,0 +1,38 @@
+.header .img {
+    border: 2px solid rgb(161, 161, 161);
+    padding: 1px;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-around; */
+    border: 1px solid black;
+}
+.summary {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid black;
+}
+.header h3 , .header h4 {
+    margin: 0;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+}
+.header .name {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    width: 100%;
+    margin: auto;
+}
+.header > div {
+    margin: 2px;
+}

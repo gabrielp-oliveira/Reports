@@ -1,0 +1,18 @@
+<span class="tableTitle">Comments</span>
+<table class="table">
+    <tr>
+        {{#each commentsKey}}
+        <th>{{this}} </th>
+        {{/each}}
+    </tr>
+    {{#each commentsValue}}
+    <tr>
+        <td>{{this.audit}}</td>
+        <td>{{this.customerKey}}</td>
+        <td>{{this.Comments}}</td>
+        <td>{{this.selector}}</td>
+    </tr>
+    {{/each}}
+
+    
+  </table>

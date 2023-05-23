@@ -1,0 +1,9 @@
+.subHeader {
+    display: flex;
+    justify-content: start;
+    margin-top: 20px;
+}
+.subHeader strong {
+    margin: 10px ;
+    width: 100px;
+}

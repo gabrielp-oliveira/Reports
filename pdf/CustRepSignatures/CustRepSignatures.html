@@ -1,0 +1,14 @@
+<span class="tableTitle">Cust Rep Signatures</span>
+<table class="table">
+  <tr>
+      {{#each CustRepSignaturesKey}}
+      <th>{{this}}</th>
+      {{/each}}
+  </tr>
+  {{#each CustRepSignaturesValue}}
+  <tr>
+      <td>{{this.title}}</td>
+      <td>{{this.assignature}}</td>
+  </tr>
+  {{/each}}
+</table>
