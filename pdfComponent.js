@@ -30,7 +30,19 @@ function createHTMLComponent (source, dataSource = {}, comps = [])  {
         dataSource[source+'Key'] = dataSource.map((el) => {
             return Object.keys(el)
         })[0]
+    }else {
+        const keyValues = Object.entries(dataSource)
+        keyValues.forEach((el) => {
+            if(Array.isArray(el[1])){
+                dataSource[el[0]+'Value'] = el[1]
+                dataSource[el[0]+'Key'] = el[1].map((x) => {
+                    return Object.keys(x)
+                })[0]
+            }
+        })
+        
     }
+
     const htmlPath = `${pathToPdf}\\${source}\\${source}.html`
     const cssPath = `${pathToPdf}\\${source}\\${source}.css`
     
